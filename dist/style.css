@@ -23,27 +23,14 @@ body {
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   padding: 0.4em;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
+    0 0 40px rgb(224, 172, 0), 0 0 80px rgb(224, 172, 0),
+    0 0 90px rgb(224, 172, 0), 0 0 100px rgb(224, 172, 0),
+    0 0 150px rgb(224, 172, 0);
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem rgb(224, 172, 0),
     0 0 0.8rem rgb(224, 172, 0), 0 0 2.8rem rgb(224, 172, 0),
     inset 0 0 1.3rem rgb(224, 172, 0);
   margin-bottom: 10rem;
-}
-
-@keyframes pulsate {
-  100% {
-    /* Larger blur radius */
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff,
-      0 0 40px rgb(224, 172, 0), 0 0 80px rgb(224, 172, 0),
-      0 0 90px rgb(224, 172, 0), 0 0 100px rgb(224, 172, 0),
-      0 0 150px rgb(224, 172, 0);
-  }
-  0% {
-    /* A slightly smaller blur radius */
-    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff,
-      0 0 38px rgb(224, 172, 0), 0 0 73px rgb(224, 172, 0),
-      0 0 80px rgb(224, 172, 0), 0 0 94px rgb(224, 172, 0),
-      0 0 140px rgb(224, 172, 0);
-  }
 }
 
 .main {
@@ -130,7 +117,7 @@ body {
 }
 
 .contact__info {
-  margin: 1rem 0 0 5rem;
+  margin: 2rem 0 0 5rem;
 }
 
 .contact__details > p {
@@ -148,4 +135,47 @@ body {
   justify-content: left;
   align-items: center;
   text-align: center;
+}
+
+.menu {
+  border: 1px solid rgba(224, 172, 0, 0.4);
+  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.479),
+    0 0 0.2rem rgba(255, 255, 255, 0.39), 0 0 2rem rgba(224, 172, 0, 0.397),
+    0 0 0.8rem rgba(224, 172, 0, 0.397), 0 0 2.8rem rgba(224, 172, 0, 0.397),
+    inset 0 0 1.3rem rgba(224, 172, 0, 0.397);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 60px 0;
+  height: 40vh;
+  width: 30vw;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.menu-position {
+  float: left;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 1.5rem 2.4rem;
+  text-align: center;
+  background-color: rgba(180, 180, 180, 0.144);
+  transition: 0.3s;
+}
+
+.menu-position:hover {
+  transform: scale(1.1);
+  background-color: rgba(180, 180, 180, 0.247);
+}
+
+.pizza {
+  width: 12rem;
+}
+
+.pizza-desc {
+  text-align: center;
+}
+
+.pizza-desc > h2 {
+  margin: 0;
 }
